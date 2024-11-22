@@ -1,0 +1,34 @@
+// Obtén el ID del libro desde la URL
+const urlParams = new URLSearchParams(window.location.search);
+const libroId = urlParams.get('id');
+
+// Datos simulados de libros (esto sería reemplazado por una API o base de datos)
+const libros = [
+    {
+        id: "1",
+        titulo: "Harry Potter y el Cáliz de Fuego",
+        autor: "J.K. Rowling",
+        portada: "img/hattypotter.jpg",
+        descripcion: "El cuarto libro de la saga Harry Potter."
+    },
+    {
+        id: "2",
+        titulo: "El Señor de los Anillos",
+        autor: "J.R.R. Tolkien",
+        portada: "img/señoranillo.jpg",
+        descripcion: "Una épica aventura en la Tierra Media."
+    }
+];
+
+// Busca el libro por ID
+const libro = libros.find((libro) => libro.id === libroId);
+
+// Si el libro existe, actualiza el contenido de la página
+if (libro) {
+    document.getElementById("titulo").innerText = libro.titulo;
+    document.getElementById("portada").src = libro.portada;
+    document.getElementById("autor").querySelector("span").innerText = libro.autor;
+    document.getElementById("descripcion").querySelector("span").innerText = libro.descripcion;
+} else {
+    document.getElementById("detalle").innerHTML = "<p>Libro no encontrado.</p>";
+}
