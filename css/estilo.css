@@ -100,7 +100,6 @@ footer {
     text-align: center;
 }
 
-/* Estilo para el contenedor principal */
 .login-container {
     background: white;
     border: 1px solid #ddd;
@@ -112,14 +111,13 @@ footer {
     text-align: center;
 }
 
-/* Estilo para los títulos principales */
 .login-container h1 {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 1.5rem;
 }
 
-/* Estilo de los formularios */
+
 .form-group {
     margin-bottom: 1rem;
 }
@@ -145,7 +143,7 @@ footer {
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
 }
 
-/* Botón principal */
+
 .login-btn {
     width: 100%;
     padding: 0.8rem;
@@ -162,7 +160,7 @@ footer {
     background-color: #0056b3;
 }
 
-/* Estilo para los enlaces */
+
 .register-link {
     display: block;
     margin-top: 1rem;
@@ -175,7 +173,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Footer específico */
+
 footer {
     margin-top: 2rem;
     background-color: #333;
