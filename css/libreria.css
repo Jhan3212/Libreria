@@ -4,8 +4,11 @@
 
 }
 
-body {
-    background: rgba(157, 157, 157, 0.512);
+.fondo {
+    background-image: url('img/img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -108,7 +111,7 @@ header li a:hover {
 
 /* Imagen */
 .contenedor img {
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
     border-bottom: 2px solid #50C878;
     /* Línea decorativa */
@@ -172,12 +175,7 @@ header li a:hover {
 
 /* Asegura que el body y el contenedor principal ocupen toda la pantalla */
 html,
-body {
-    height: 100%;
-    /* Garantiza que el body tenga el 100% de la altura */
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* Contenedor principal para el contenido */
 main {
