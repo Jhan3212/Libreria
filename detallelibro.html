@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Libro</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/detalleLibro.css">
 </head>
 
 <body>
+    <div id="overlay"></div>
+
     <header>
         <h1>Detalles del Libro</h1>
         <a href="index.html">Volver al Catálogo</a>
@@ -16,13 +18,26 @@
 
     <main>
         <div id="detalle">
-            <h2 id="titulo">Título del libro</h2>
-            <img id="portada" src="assets/images/default.jpg" alt="Portada del libro">
-            <p id="autor">Autor: <span></span></p>
-            <p id="descripcion">Descripción: <span></span></p>
+            <div class="apoyo">
+                <div class="portada-container">
+                    <img id="portada" src="img/default.jpg" alt="Portada del libro">
+                </div>
+                <div id="boton-container">
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div>
+                <h2 id="titulo">Título del libro</h2>
+                <p id="autor">Autor: <span>Nombre del Autor</span></p>
+                <p id="descripcion">Descripción: <span>Descripción del libro</span></p>
+
+            </div>
+
         </div>
+
     </main>
 </body>
-<script src="assets/js/detalle-libro.js"></script>
+<script src="JavaScript/detalleLibro"></script>
 
 </html>
