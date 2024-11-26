@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pruebaAPI-BD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a367c6bd99f9982e807dd59e2badf35c783b5c28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47e6198726e515e1bb9c0725765602ba023c7c7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("pruebaAPI-BD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pruebaAPI-BD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -66,5 +66,53 @@ namespace pruebaAPI_BD.Datos
             return libros;
         }
 
+
+        public List<Libro> DameUnLibro(string _idlibro)
+        {
+            List<Libro> libros = new List<Libro>();
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = ("SELECT * FROM Libro where idlibro = " + _idlibro + ";");
+
+                cmd.Connection.Open();
+                ds = new DataSet();
+
+                adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(ds);
+
+                foreach (DataTable table in ds.Tables)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        var libro = new Libro()
+                        {
+                            idlibro = Convert.ToInt32(row["idLibro"].ToString()),
+                            titulo = row["titulo"].ToString(),
+                            autor = row["autor"].ToString(),
+                            precio = Convert.ToDecimal(row["precio"].ToString()),
+                            stock = Convert.ToInt32(row["stock"].ToString()),
+                            idgenero = Convert.ToInt32(row["idGenero"].ToString())
+
+                        };
+                        libros.Add(libro);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+
+            return libros;
+        }
+
     }
 }
