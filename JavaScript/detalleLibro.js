@@ -1,6 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const libroId = urlParams.get('id');
 
+console.log("ID en detalles:", libroId); 
+
 const libros = [
     {
         id: "1",
@@ -26,33 +28,11 @@ if (!libroId || isNaN(libroId)) {
     const libro = libros.find((libro) => libro.id === libroId);
 
     if (libro) {
-        // Mostrar los detalles del libro
         document.getElementById("titulo").innerText = libro.titulo;
         document.getElementById("portada").src = libro.portada || "assets/images/default.jpg";
         document.getElementById("portada").alt = `Portada del libro: ${libro.titulo}`;
         document.getElementById("autor").querySelector("span").innerText = libro.autor;
         document.getElementById("descripcion").querySelector("span").innerText = libro.descripcion;
-
-        // Funcionalidad de agregar a favoritos
-        const btnFavorite = document.querySelector('#btnFavorite');
-
-        btnFavorite.addEventListener('click', function () {
-            // Obtener los libros favoritos desde localStorage (si existen)
-            let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
-
-            // Verificar si el libro ya está en los favoritos
-            if (!favoritos.some(fav => fav.id === libro.id)) {
-                // Agregar el libro a la lista de favoritos
-                favoritos.push(libro);
-
-                // Guardar la lista de favoritos actualizada en localStorage
-                localStorage.setItem('favoritos', JSON.stringify(favoritos));
-                alert('Libro agregado a favoritos');
-            } else {
-                alert('Este libro ya está en tus favoritos');
-            }
-        });
-
     } else {
         document.getElementById("detalle").innerHTML = `
             <p>Libro no encontrado.</p>
