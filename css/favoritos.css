@@ -193,3 +193,17 @@ main h2 {
     background: #392400e6;
     ;
 }
+
+.eliminar {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.eliminar:hover {
+    background-color: #ff1a1a;
+}
