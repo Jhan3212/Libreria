@@ -17,10 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     ];
 
-    // Obtener el contenedor donde se mostrarán los libros
     const catalogoContainer = document.getElementById("catalogo-container");
 
-    // Iterar sobre el array de libros y generar el HTML para cada uno
     libros.forEach(libro => {
         const libroElement = document.createElement("div");
         libroElement.classList.add("libro");
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <p>Autor: ${libro.autor}</p>
         `;
 
-        // Agregar el libro generado al contenedor
         catalogoContainer.appendChild(libroElement);
     });
 });
