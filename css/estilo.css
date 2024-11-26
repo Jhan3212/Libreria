@@ -1,51 +1,97 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
 
+}
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    background: rgba(157, 157, 157, 0.512);
 }
 
-
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+
+}
+
+header .logo {
+    position: relative;
+    font-size: 2em;
+    color: rgb(53, 35, 1);
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-header .logo h1 {
-    font-size: 1.5rem;
-}
 
-header nav ul {
-    list-style: none;
+header ul {
+    position: relative;
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
 }
 
-header nav ul li a {
-    color: white;
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 10px;
+    padding: 4px;
     text-decoration: none;
-    font-size: 1rem;
+    color: #392400bb;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.7s;
 }
 
+header .ul2 {
+    font-size: medium;
+}
+
+header li a:hover {
+    color: #ffffffbb;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
 
 .banner {
-    background-image: url('assets/images/banner.jpg');
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bosque.jpg');
     background-size: cover;
-    background-position: center;
-    color: blueviolet;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
     text-align: center;
-    padding: 2rem 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .banner-text h2 {
@@ -53,6 +99,32 @@ header nav ul li a {
     margin-bottom: 1rem;
 }
 
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+header .logo {
+    position: relative;
+
+    font-weight: bold;
+    color: rgb(53, 35, 1);
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+header.abajo {
+    background: rgba(42, 98, 63, 1);
+    padding: 15px 20px;
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+    color: #ffffff;
+}
 
 main {
     padding: 1rem 1rem;
@@ -71,10 +143,12 @@ main h2 {
 }
 
 .libro {
-    background: white;
-    border: 1px solid #ddd;
+    background: rgba(53, 35, 1, 0.644);
+    border: 1px solid #563b00;
+    color: #ffffff;
     border-radius: 8px;
     padding: 1rem;
+    margin: 5px;
     text-align: center;
     width: 200px;
 }
@@ -86,35 +160,79 @@ main h2 {
 }
 
 
-#nosotros {
-    background-color: #eee;
-    padding: 2rem;
+
+.nosotros {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
     text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
 
-.busqueda {
-    position: absolute;
-    left: 48%;
-    top: 5%;
-    transform: translate(-50%, -50%);
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.5);
+    color: #312002e0;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.content .section {
+    flex: 1;
     padding: 10px;
+}
+
+.section h3 {
+    margin-bottom: 15px;
+}
+
+.section a {
+    color: #312002e0;
+    text-decoration: none;
+}
+
+.section a:hover {
+    color: #ffffffe0;
+    background: rgba(42, 98, 63, 1);
+}
+
+#final {
+    background: rgba(42, 98, 63, 1);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Para controlar el contenido dentro */
+    margin-left: auto;
+    /* Empuja la barra de búsqueda a la derecha */
+    transition: 0.5s ease;
 }
 
 .busqueda input {
     outline: none;
     box-sizing: border-box;
-    height: 30px;
+    height: 35px;
     width: 0px;
     padding: 0 20px;
     color: #000;
     border-radius: 50px;
-    font-size: 20px;
-    border: 1px solid #D50000;
-    transition: all .7s ease;
+    font-size: 16px;
+    border: 1px solid #392400bb;
+    ;
+    transition: all 0.7s ease;
 }
 
-.busqueda ::placeholder {
+.busqueda::placeholder {
     color: grey;
 }
 
@@ -122,25 +240,27 @@ main h2 {
     position: absolute;
     right: 0px;
     top: 0px;
-    width: 50px;
-    height: 50px;
-    background: #D50000;
-    line-height: 50px;
+    width: 40px;
+    height: 40px;
+    background: #392400bb;
+    ;
+    line-height: 40px;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .busqueda .btn i {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
-    line-height: 50px;
-    transition: all .7s ease;
+    line-height: 40px;
+    transition: all 0.7s ease;
 }
 
 .busqueda:hover input {
-    width: 350px;
+    width: 250px;
+    /* Expansión más suave al hacer hover */
 }
 
 .busqueda:hover i {
@@ -148,5 +268,6 @@ main h2 {
 }
 
 .busqueda .btn:hover {
-    background: #cc0000;
+    background: #392400e6;
+    ;
 }
