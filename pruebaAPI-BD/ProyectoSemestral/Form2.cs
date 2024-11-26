@@ -31,5 +31,33 @@ namespace ProyectoSemestral
         {
 
         }
+
+        private void btnSeleccionarImagen_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                // Configurar la ruta inicial basada en el directorio de inicio de la aplicación
+                ofd.InitialDirectory = Application.StartupPath + @"\ImgPortadas";
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        // Cargar la imagen seleccionada en el PictureBox
+                        pbxPortada.Image = Image.FromFile(ofd.FileName);
+
+                        // Ajustar la imagen para que se ajuste al tamaño del PictureBox
+                        pbxPortada.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                        MessageBox.Show("Imagen cargada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al cargar la imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
     }
 }

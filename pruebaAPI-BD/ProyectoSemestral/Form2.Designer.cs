@@ -42,10 +42,10 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.btnAñadirLibro = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbxPortada = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnSeleccionarImagen = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPortada)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -181,13 +181,13 @@
             this.btnAñadirLibro.Text = "Guardar libro";
             this.btnAñadirLibro.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pbxPortada
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(204, 130);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 198);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.pbxPortada.Location = new System.Drawing.Point(204, 130);
+            this.pbxPortada.Name = "pbxPortada";
+            this.pbxPortada.Size = new System.Drawing.Size(187, 198);
+            this.pbxPortada.TabIndex = 14;
+            this.pbxPortada.TabStop = false;
             // 
             // label8
             // 
@@ -207,6 +207,7 @@
             this.btnSeleccionarImagen.TabIndex = 16;
             this.btnSeleccionarImagen.Text = "Seleccionar imagen";
             this.btnSeleccionarImagen.UseVisualStyleBackColor = true;
+            this.btnSeleccionarImagen.Click += new System.EventHandler(this.btnSeleccionarImagen_Click);
             // 
             // Form2
             // 
@@ -215,7 +216,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSeleccionarImagen);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbxPortada);
             this.Controls.Add(this.btnAñadirLibro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker1);
@@ -233,7 +234,7 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPortada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,7 +256,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnAñadirLibro;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbxPortada;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSeleccionarImagen;
     }
