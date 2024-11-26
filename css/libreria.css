@@ -1,14 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-   
+
 }
 
-.fondo {
-    background-image: url('img/img.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+body {
+    background: rgba(157, 157, 157, 0.512);
 }
 
 header {
@@ -111,7 +108,7 @@ header li a:hover {
 
 /* Imagen */
 .contenedor img {
-    max-width: 150%;
+    max-width: 100%;
     height: auto;
     background: rgba(42, 98, 63, 1);
     /* Línea decorativa */
@@ -158,7 +155,7 @@ header li a:hover {
 
 /* Botón */
 .informacion button {
-   background: rgba(42, 98, 63, 1);
+    background: rgba(42, 98, 63, 1);
     color: white;
     font-size: 1rem;
     font-weight: 500;
@@ -175,7 +172,12 @@ header li a:hover {
 
 /* Asegura que el body y el contenedor principal ocupen toda la pantalla */
 html,
-
+body {
+    height: 100%;
+    /* Garantiza que el body tenga el 100% de la altura */
+    display: flex;
+    flex-direction: column;
+}
 
 /* Contenedor principal para el contenido */
 main {
@@ -297,7 +299,8 @@ main {
     font-size: 14px;
     color: #ccc;
 }
-main  a {
+
+main a {
     position: relative;
     font-family: Helvetica;
     margin: 0 10px;
@@ -315,6 +318,7 @@ main h1 {
     text-align: center;
     padding: 8px 12px;
     margin: 10px 20px;
-    background: rgba(42, 98, 63, 1); ;
+    background: rgba(42, 98, 63, 1);
+    ;
     border-radius: 5px;
 }
