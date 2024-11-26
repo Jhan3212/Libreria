@@ -74,39 +74,6 @@ header li a:hover {
     border-radius: 5px;
 }
 
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../img/bosque.jpg');
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.banner-text {
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.banner-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.banner-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-
 header .logo {
     position: relative;
 
@@ -161,53 +128,6 @@ main h2 {
     border-radius: 8px;
 }
 
-
-
-.nosotros {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    background: rgba(0, 0, 0, 0.5);
-    color: #312002e0;
-    padding: 20px 0;
-    text-align: left;
-}
-
-.content .section {
-    flex: 1;
-    padding: 10px;
-}
-
-.section h3 {
-    margin-bottom: 15px;
-}
-
-.section a {
-    color: #312002e0;
-    text-decoration: none;
-}
-
-.section a:hover {
-    color: #ffffffe0;
-    background: rgba(42, 98, 63, 1);
-}
-
-#final {
-    background: rgba(42, 98, 63, 1);
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    color: #ccc;
-}
 
 .busqueda {
     display: flex;

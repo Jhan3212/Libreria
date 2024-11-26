@@ -94,7 +94,13 @@ header a {
 }
 
 #boton-container {
+    margin-left: -23%;
     margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Crear dos columnas */
+    gap: 20px;
+    /* Espacio entre las columnas */
 }
 
 button {
@@ -103,7 +109,6 @@ button {
     font-size: 1em;
     padding: 10px 20px;
     border: none;
-    margin-left: -23%;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);

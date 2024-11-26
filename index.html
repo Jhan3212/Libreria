@@ -43,22 +43,8 @@
 
     <main id="catalogo">
         <h2>Libros destacados</h2>
-        <div class="catalogo">
-            <div class="libro">
-                <a href="detallelibro.html?id=1">
-                    <img src="img/harrypotter.jpg" alt="Harry Potter">
-                </a>
-                <h3>Harry Potter</h3>
-                <p>Autor: J.K. Rowling</p>
-            </div>
-            <div class="libro">
-                <a href="detallelibro.html?id=2">
-                    <img src="img/señoranillo.jpg" alt="Señor Anillos">
-                </a>
-                <h3>El Señor de los Anillos</h3>
-                <p>Autor: J.R.R. Tolkien</p>
-            </div>
-
+        <div class="catalogo" id="catalogo-container">
+            
         </div>
     </main>
 
@@ -97,6 +83,7 @@
 			header.classList.toggle("abajo",window.scrollY>0);
 		})
 	</script>
+    <script src="JavaScript/catalogo.js"></script>
 </body>
 
 </html>
