@@ -109,7 +109,8 @@ header li a:hover {
 /* Imagen */
 .contenedor img {
     max-width: 100%;
-    height: auto;
+    height: 83%;
+    object-fit: cover;
     background: rgba(42, 98, 63, 1);
     /* Línea decorativa */
 }
