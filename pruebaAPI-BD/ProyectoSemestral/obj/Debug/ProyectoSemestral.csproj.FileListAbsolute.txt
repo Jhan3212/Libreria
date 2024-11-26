@@ -1,0 +1,11 @@
+C:\Users\admin\source\repos\ProyectoSemestral\bin\Debug\ProyectoSemestral.exe.config
+C:\Users\admin\source\repos\ProyectoSemestral\bin\Debug\ProyectoSemestral.exe
+C:\Users\admin\source\repos\ProyectoSemestral\bin\Debug\ProyectoSemestral.pdb
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.Form1.resources
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.Properties.Resources.resources
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.exe
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.pdb
+C:\Users\admin\source\repos\ProyectoSemestral\obj\Debug\ProyectoSemestral.Form2.resources

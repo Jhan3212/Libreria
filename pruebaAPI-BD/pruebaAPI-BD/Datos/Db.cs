@@ -12,21 +12,21 @@ namespace pruebaAPI_BD.Datos
         DataSet ds;
         public Db()
         {
-            string cadenaConexion = "server=localhost;Port=3306;user id=root;password=1234;database=cafecitos;persistsecurityinfo=True";
+            string cadenaConexion = "server=localhost;Port=3306;user id=root;password=1234;database=libreriadb;persistsecurityinfo=True";
             con = new MySqlConnection();
             con.ConnectionString = cadenaConexion;
             cmd = new MySqlCommand();
             cmd.Connection = con;
         }
         
-        public List<Cafe> ObtenerCafe()
+        public List<Libro> ObtenerLibros()
         {
-            List<Cafe> cafes = new List<Cafe>();
+            List<Libro> libros = new List<Libro>();
             try
             {
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT * FROM Cafe";
+                cmd.CommandText = "SELECT * FROM Libro";
 
                 cmd.Connection.Open();
                 ds = new DataSet();
@@ -38,16 +38,17 @@ namespace pruebaAPI_BD.Datos
                 {
                     foreach (DataRow row in table.Rows)
                     {
-                        var cafe = new Cafe()
+                        var libro = new Libro()
                         {
-                            id = Convert.ToInt32(row["id"].ToString()),
-                            nombre = row["id"].ToString(),
-                            descripcion = row["descripcion"].ToString(),
-                            precio = Convert.ToDouble(row["precio"].ToString()),
-                            marca = row["marca"].ToString()
+                            idlibro = Convert.ToInt32(row["idLibro"].ToString()),
+                            titulo = row["titulo"].ToString(),
+                            autor = row["autor"].ToString(),
+                            precio = Convert.ToDecimal(row["precio"].ToString()),
+                            stock = Convert.ToInt32(row["stock"].ToString()),
+                            idgenero = Convert.ToInt32(row["idGenero"].ToString())
 
                         };
-                        cafes.Add(cafe);
+                        libros.Add(libro);
                     }
                 }
 
@@ -62,7 +63,7 @@ namespace pruebaAPI_BD.Datos
                 cmd.Connection.Close();
             }
 
-            return cafes;
+            return libros;
         }
 
     }

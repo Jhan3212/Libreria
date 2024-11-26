@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Cafecito/TotalCafes": {
+    "/api/Libros/TotalLibros": {
       "get": {
         "tags": [
-          "Cafecito"
+          "Libros"
         ],
         "responses": {
           "200": {
@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Cafe"
+                    "$ref": "#/components/schemas/Libro"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Cafe"
+                    "$ref": "#/components/schemas/Libro"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Cafe"
+                    "$ref": "#/components/schemas/Libro"
                   }
                 }
               }
@@ -85,18 +85,18 @@
   },
   "components": {
     "schemas": {
-      "Cafe": {
+      "Libro": {
         "type": "object",
         "properties": {
-          "id": {
+          "idlibro": {
             "type": "integer",
             "format": "int32"
           },
-          "nombre": {
+          "titulo": {
             "type": "string",
             "nullable": true
           },
-          "descripcion": {
+          "autor": {
             "type": "string",
             "nullable": true
           },
@@ -104,9 +104,13 @@
             "type": "number",
             "format": "double"
           },
-          "marca": {
-            "type": "string",
-            "nullable": true
+          "stock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idgenero": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

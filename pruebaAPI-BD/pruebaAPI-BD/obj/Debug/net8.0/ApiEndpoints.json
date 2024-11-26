@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "pruebaAPI_BD.Controllers.CafecitoController",
-    "Method": "ObtenerCafes",
-    "RelativePath": "api/Cafecito/TotalCafes",
+    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
+    "Method": "TotaldeLibros",
+    "RelativePath": "api/Libros/TotalLibros",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Cafe, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Libro, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
