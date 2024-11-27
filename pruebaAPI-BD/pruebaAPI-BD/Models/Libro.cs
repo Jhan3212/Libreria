@@ -10,9 +10,10 @@
 
         public decimal precio { get; set; }
 
-        public int stock { get; set; }
+        public string urlPortada { get; set; }
 
         public int idgenero { get; set;}
+        public string Descripcion { get; set; }
 
     }
 }

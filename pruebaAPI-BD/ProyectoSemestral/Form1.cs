@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
-using ProyectoSemestral.Models; // Asegúrate de que este sea el namespace correcto
+using ProyectoSemestral.Models;
+using ProyectoSemestral.Services; // Asegúrate de que este sea el namespace correcto
 
 namespace ProyectoSemestral
 {
@@ -21,36 +22,7 @@ namespace ProyectoSemestral
             _httpClient = new HttpClient();
         }
 
-        private async Task<RespuestaLogin> EnviarValidarLoginAsync(LogueoUsuarioAdmin loginData)
-        {
-            try
-            {
-                // Convertir el objeto LoginData a JSON
-                string jsonData = JsonConvert.SerializeObject(loginData);
-                var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
-
-                // Realizar la solicitud POST para validar el inicio de sesión
-                HttpResponseMessage response = await _httpClient.PostAsync("http://localhost:7061/api/users/validate", content);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    // Deserializar la respuesta de la API a un objeto de tipo RespuestaLogin
-                    return JsonConvert.DeserializeObject<RespuestaLogin>(responseBody);
-                }
-                else
-                {
-                    MessageBox.Show("Error al intentar iniciar sesión.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-        }
-
+       
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -91,6 +63,8 @@ namespace ProyectoSemestral
 
         }
 
+
+        //es para inciniar sesion
         private void btnIniciarSesionUsuario_Click(object sender, EventArgs e)
         {
             btnIniciarSesionUsuario_ClickAsync(sender, e);
@@ -107,37 +81,38 @@ namespace ProyectoSemestral
                 return;
             }
 
-            // Crear una instancia de LogueoUsuarioAdmin con los datos del formulario
-            var loginData = new LogueoUsuarioAdmin
+            var user = new UserRequest()
             {
-                Id = usuario,
+                Name = usuario,
                 Password = contraseña
             };
 
-            // Enviar los datos de login para validar
-            var respuesta = await EnviarValidarLoginAsync(loginData);
-
-            if (respuesta != null)
+            try
             {
-                if (respuesta.Status == "Success")
+                var respuesta = await UserService.ObtenerTodosLosUsuarios(user);
+
+                if (respuesta != null && respuesta.Count > 0)
                 {
-                    // Validación según el rol
-                    if (respuesta.Role == "admin")
-                    {
-                        MessageBox.Show("Bienvenido, Administrador.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        // Aquí puedes abrir el formulario de administrador
-                    }
-                    else if (respuesta.Role == "user")
-                    {
-                        MessageBox.Show("Bienvenido, Usuario.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        // Aquí puedes redirigir a un formulario de usuario
-                    }
+                    // Inicio de sesión exitoso
+                    MessageBox.Show("Inicio de sesión exitoso.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Form2 form2 = new Form2(usuario);
+                    form2.Show();
+
+                    this.Hide();
                 }
                 else
                 {
+                    // Usuario no encontrado
                     MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
     }
 }
+

@@ -63,19 +63,34 @@
   },
   {
     "ContainingType": "UsersController",
-    "Method": "ValidateUser",
-    "RelativePath": "api/Users/validate",
-    "HttpMethod": "POST",
+    "Method": "ObtenerUnUsuario",
+    "RelativePath": "api/Users/Validate/{_nombreUser}/{_ContraUser}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "UsersController\u002BLogueoUsuarioAdmin",
+        "Name": "_nombreUser",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "_ContraUser",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Usuarios, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "pruebaAPI_BD.Controllers.WeatherForecastController",

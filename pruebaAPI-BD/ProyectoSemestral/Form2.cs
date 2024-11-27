@@ -12,14 +12,16 @@ namespace ProyectoSemestral
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string usuario;
+        public Form2(string usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            lblUsuario.Text = usuario;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,6 +60,13 @@ namespace ProyectoSemestral
                     }
                 }
             }
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
         }
     }
 }

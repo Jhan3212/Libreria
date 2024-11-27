@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "zl/ekLtc7y8mRzfsJVovAP+zXh4xNxj5FkTI2RSiN/8=",
+  "Hash": "zqN+9uDlZjBAudHiWNo3jN5XOPR5ohUAXBIQahtHMsg=",
   "Source": "pruebaAPI-BD",
   "BasePath": "_content/pruebaAPI-BD",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

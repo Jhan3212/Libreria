@@ -12,7 +12,7 @@ namespace pruebaAPI_BD.Datos
         DataSet ds;
         public Db()
         {
-            string cadenaConexion = "server=localhost;Port=3306;user id=root;password=1234;database=libreriadb;persistsecurityinfo=True";
+            string cadenaConexion = "server=b9gbnoonn2o8i5etcard-mysql.services.clever-cloud.com;Port=3306;user id=ulikf55afsa6qbr2;password=rVHGltw9cIx4tIECuOgh;database=b9gbnoonn2o8i5etcard;persistsecurityinfo=True";
             con = new MySqlConnection();
             con.ConnectionString = cadenaConexion;
             cmd = new MySqlCommand();
@@ -44,8 +44,9 @@ namespace pruebaAPI_BD.Datos
                             titulo = row["titulo"].ToString(),
                             autor = row["autor"].ToString(),
                             precio = Convert.ToDecimal(row["precio"].ToString()),
-                            stock = Convert.ToInt32(row["stock"].ToString()),
-                            idgenero = Convert.ToInt32(row["idGenero"].ToString())
+                            urlPortada = row["urlPortada"].ToString(),
+                            idgenero = Convert.ToInt32(row["idGenero"].ToString()),
+                            Descripcion = row["Descripcion"].ToString()
 
                         };
                         libros.Add(libro);
@@ -92,8 +93,9 @@ namespace pruebaAPI_BD.Datos
                             titulo = row["titulo"].ToString(),
                             autor = row["autor"].ToString(),
                             precio = Convert.ToDecimal(row["precio"].ToString()),
-                            stock = Convert.ToInt32(row["stock"].ToString()),
-                            idgenero = Convert.ToInt32(row["idGenero"].ToString())
+                            urlPortada = row["urlPortada"].ToString(),
+                            idgenero = Convert.ToInt32(row["idGenero"].ToString()),
+                            Descripcion = row["Descripcion"].ToString()
 
                         };
                         libros.Add(libro);
@@ -121,11 +123,14 @@ namespace pruebaAPI_BD.Datos
             {
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO libro(titulo, autor, precio, idgenero) values (@titulo,@autor,@precio,@idgenero)";
+                cmd.CommandText = "INSERT INTO libro(titulo, autor, precio, stock,idgenero) values (@titulo,@autor,@precio, @url, @idgenero, @Desc)";
                 cmd.Parameters.Add(new MySqlParameter("@titulo", libritolindo.titulo));
                 cmd.Parameters.Add(new MySqlParameter("@autor", libritolindo.autor));
                 cmd.Parameters.Add(new MySqlParameter("@precio", libritolindo.precio));
                 cmd.Parameters.Add(new MySqlParameter("@idgenero", libritolindo.idgenero));
+                cmd.Parameters.Add(new MySqlParameter("@url", libritolindo.urlPortada));
+                cmd.Parameters.Add(new MySqlParameter("@Desc", libritolindo.Descripcion));
+
 
                 cmd.Connection.Open();
                 int insertedId = Convert.ToInt32(cmd.ExecuteNonQuery());
@@ -139,6 +144,49 @@ namespace pruebaAPI_BD.Datos
             }
             finally { cmd.Connection.Close(); }
             return 0;
+        }
+
+        public List<Usuarios> ObtenerUsuario(string name, string password)
+        {
+            List<Usuarios> usuarios = new List<Usuarios>();
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = ("SELECT * FROM admins WHERE nombreAdmin = @name and contraAdmin = @password");
+
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                cmd.Connection.Open();
+                ds = new DataSet();
+
+                adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(ds);
+
+                foreach (DataTable table in ds.Tables)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        var usuario = new Usuarios()
+                        {
+                            Id = Convert.ToInt32(row["idAdmin"].ToString()),
+                            Name = row["nombreAdmin"].ToString(),
+                            Password = row["contraAdmin"].ToString(),
+
+
+                        };
+                        usuarios.Add(usuario);
+                    }
+                }
+            }
+
+            catch (Exception ex) { throw;  }
+
+            finally { cmd.Connection.Close(); }
+
+            return usuarios;
+            
         }
     }
 }
