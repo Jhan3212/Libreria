@@ -123,11 +123,9 @@ main {
 .busqueda .btn {
     position: absolute;
     right: 0px;
-    top: 0px;
-    width: 40px;
+    width: 42.5px;
     height: 40px;
     background: #392400bb;
-    ;
     line-height: 40px;
     border-radius: 50%;
     text-align: center;

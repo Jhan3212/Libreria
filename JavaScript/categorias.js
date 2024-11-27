@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     const catalogoContainer = document.getElementById("catalogo-container");
-    const searchInput = document.querySelector(".busqueda input");
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoriaSeleccionada = urlParams.get('categoria');
 
     function mostrarLibros(librosAFiltrar) {
-        catalogoContainer.innerHTML = '';
+        catalogoContainer.innerHTML = ''; // Limpiar contenido previo
+
+        if (librosAFiltrar.length === 0) {
+            catalogoContainer.innerHTML = '<p>No hay libros en esta categoría.</p>';
+            return;
+        }
+
         librosAFiltrar.forEach(libro => {
             const libroElement = document.createElement("div");
             libroElement.classList.add("libro");
@@ -20,15 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Mostrar todos los libros al cargar la página
-    mostrarLibros(libros);
-
-    searchInput.addEventListener('input', function () {
-        const query = searchInput.value.toLowerCase();
+    if (categoriaSeleccionada) {
         const librosFiltrados = libros.filter(libro =>
-            libro.titulo.toLowerCase().includes(query) ||
-            libro.autor.toLowerCase().includes(query)
+            libro.categoria.toLowerCase() === categoriaSeleccionada.toLowerCase()
         );
         mostrarLibros(librosFiltrados);
-    });
+    } else {
+        mostrarLibros(libros); // Mostrar todos los libros si no hay categoría seleccionada
+    }
 });

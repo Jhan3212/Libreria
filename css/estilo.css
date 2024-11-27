@@ -107,16 +107,7 @@ header li a:hover {
 }
 
 
-header .logo {
-    position: relative;
 
-    font-weight: bold;
-    color: rgb(53, 35, 1);
-    font-size: 2em;
-    letter-spacing: 2px;
-    transition: 1.5s;
-    text-decoration: none;
-}
 
 header.abajo {
     background: rgba(42, 98, 63, 1);
@@ -214,9 +205,7 @@ main h2 {
     align-items: center;
     justify-content: center;
     position: relative;
-    /* Para controlar el contenido dentro */
-    margin-left: auto;
-    /* Empuja la barra de búsqueda a la derecha */
+    margin-right: 100px;
     transition: 0.5s ease;
 }
 
@@ -241,8 +230,7 @@ main h2 {
 .busqueda .btn {
     position: absolute;
     right: 0px;
-    top: 0px;
-    width: 40px;
+    width: 42.5px;
     height: 40px;
     background: #392400bb;
     ;
@@ -262,7 +250,6 @@ main h2 {
 
 .busqueda:hover input {
     width: 250px;
-    /* Expansión más suave al hacer hover */
 }
 
 .busqueda:hover i {
@@ -281,13 +268,14 @@ main div {
     text-align: center;
     padding: 4px;
     text-decoration: none;
-    color:rgba(42, 98, 63, 1); ;
+    color: rgba(42, 98, 63, 1);
+    ;
     letter-spacing: 2px;
     font-weight: 700;
     transition: 0.7s;
 }
 
-main h2{
+main h2 {
     color: #ffffff;
     font-size: 30px;
     text-align: center;
@@ -296,8 +284,95 @@ main h2{
     background: #392400bb;
     border-radius: 5px;
 }
+
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(42, 98, 63, 1);
+    transition: left 0.3s ease;
+    z-index: 20;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #392400bb;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: #ffffffbb;
+
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.menu-icon i {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+@media (max-width: 770px) {
+    .menu-icon {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+
+    }
+
+    .busqueda {
+        display: none;
+
+    }
+
+    .sidebar {
+        display: block;
+
+    }
+
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+header.abajo {
+    background: rgba(42, 98, 63, 1);
+}
+
+.busqueda.open {
+
+    display: flex;
+}
+
+.busqueda.open input {
+
+    width: 250px;
 }
