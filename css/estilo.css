@@ -273,3 +273,31 @@ main h2 {
     background: #392400e6;
     ;
 }
+
+main div {
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 10px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    color:rgba(42, 98, 63, 1); ;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.7s;
+}
+
+main h2{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 12px;
+    margin: 10px 20px;
+    background: #392400bb;
+    border-radius: 5px;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

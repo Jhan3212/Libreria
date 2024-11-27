@@ -1,11 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
     background: rgba(157, 157, 157, 0.512);
+}
+
+.fondo {
+    background-image: url('img/img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
@@ -16,7 +22,8 @@ header {
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    padding: 30px 20px;
+    background: rgba(42, 98, 63, 1);
+    padding: 15px 20px;
     z-index: 10;
 
 }
@@ -24,7 +31,7 @@ header {
 header .logo {
     position: relative;
     font-size: 2em;
-    color: rgb(53, 35, 1);
+    color: #ffffff;
     font-weight: bold;
     letter-spacing: 2px;
     transition: 1.5s;
@@ -58,7 +65,7 @@ header ul li a {
     margin: 0 10px;
     padding: 4px;
     text-decoration: none;
-    color: #392400bb;
+    color: #ffffff;
     letter-spacing: 2px;
     font-weight: 700;
     transition: 0.7s;
@@ -74,60 +81,15 @@ header li a:hover {
     border-radius: 5px;
 }
 
-header .logo {
-    position: relative;
 
-    font-weight: bold;
-    color: rgb(53, 35, 1);
-    font-size: 2em;
-    letter-spacing: 2px;
-    transition: 1.5s;
-    text-decoration: none;
-}
-
-header.abajo {
-    background: rgba(42, 98, 63, 1);
-    padding: 15px 20px;
-}
-
-header.abajo .logo,
-header.abajo ul li a {
-    color: #ffffff;
-}
-
+/* Contenedor principal para el contenido */
 main {
-    padding: 1rem 1rem;
-}
+    margin-top: 70px;
+    flex: 1;
+    font-family: Helvetica;
 
-main h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+    /* Hace que el main ocupe el espacio disponible */
 }
-
-.catalogo {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.libro {
-    background: rgba(53, 35, 1, 0.644);
-    border: 1px solid #563b00;
-    color: #ffffff;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 5px;
-    text-align: center;
-    width: 200px;
-}
-
-.libro img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 
 .busqueda {
     display: flex;
@@ -194,16 +156,124 @@ main h2 {
     ;
 }
 
-.eliminar {
-    background-color: #ff4d4d;
+/* Footer siempre al fondo */
+
+.nosotros {
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
-.eliminar:hover {
-    background-color: #ff1a1a;
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.5);
+    color: #312002e0;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.content .section {
+    flex: 1;
+    padding: 10px;
+}
+
+.section h3 {
+    margin-bottom: 15px;
+}
+
+.section a {
+    color: #312002e0;
+    text-decoration: none;
+}
+
+.section a:hover {
+    color: #ffffffe0;
+    background: rgba(42, 98, 63, 1);
+}
+
+#final {
+    background: rgba(42, 98, 63, 1);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+main div {
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 10px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    color: rgba(42, 98, 63, 1);
+    ;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.7s;
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 12px;
+    margin: 10px 20px;
+    background: #392400bb;
+    border-radius: 5px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogo {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.libro {
+    background: rgba(53, 35, 1, 0.644);
+    border: 1px solid #563b00;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.libro img {
+    max-width: 100%;
+    height: 75%;
+    border-radius: 8px;
+}
+
+.eliminar {
+    background: rgba(42, 98, 63, 1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
