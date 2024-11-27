@@ -16,17 +16,31 @@
 <body>
     <header>
         <a href="index.html" class="logo">Library Corp.</a>
-        <nav>
+        <nav>  
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i> 
+            </div>
+    
             <ul class="ul1">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="categorias.html">Categorias</a></li>
-                <li id="perfil"><a href="inicio.html">Iniciar Sesión</a></li>
+                <li id="perfil"><a href="inicio.html">Iniciar Sesion</a></li>
                 <ul class="ul2">
                     <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="favoritos.html"><i class="fa-solid fa-bookmark"></i></a></li>
                 </ul>
-        </nav>
+            </ul>
+            </nav>
     </header>
+
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li id="perfil"><a href="inicio.html">Iniciar Sesión</a></li>
+        <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="favoritos.html"><i class="fa-solid fa-bookmark"></i></a></li>
+    </ul>
+</div>
     <section class="banner">
         <div id="detalle">
             <div class="apoyo">
@@ -34,12 +48,12 @@
                     <img id="portada" src="img/default.jpg" alt="Portada del libro">
                 </div>
             </div>
-
+    
             <div class="informacion">
                 <h2 id="titulo">Título del libro</h2>
                 <p id="autor">Autor: <span>Nombre del Autor</span></p>
                 <p id="descripcion">Descripción: <span>Descripción del libro</span></p>
-
+                
                 <div id="boton-container">
                     <button>Agregar al carrito</button>
                     <button class="favorite">
@@ -52,25 +66,24 @@
     <main id="catalogo">
         <h2>Recomendados</h2>
         <div class="catalogo" id="catalogo-container">
-
+            
         </div>
     </main>
 
-    <footer>
-        <div class="nosotros">
+    <footer> 
+        <div  class="nosotros">
             <h2>Sobre Nosotros</h2>
-            <p>Somos una librería apasionada por llevar las mejores historias a tus manos. Contamos con un catálogo
-                variado
+            <p>Somos una librería apasionada por llevar las mejores historias a tus manos. Contamos con un catálogo variado
                 que incluye clásicos, ciencia ficción, fantasía y más.</p>
-        </div>
-
+    </div>
+       
         <div class="content">
-            <div class="section">
+               <div class="section">
                 <h3>Contacto</h3>
                 <p>Email: librerycorpsupport@gmail.com</p>
                 <p>Teléfono: +1 (234) 567-890</p>
-            </div>
-
+        </div>
+    
             <div class="section">
                 <h3>Síguenos</h3>
                 <a href="https://www.facebook.com/Eliasaf Hudson">Facebook</a> |
@@ -87,16 +100,59 @@
     </footer>
 
     <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("abajo", window.scrollY > 0);
-        })
-    </script>
-    <script src="JavaScript/logOut.js"></script>
-    <script src="JavaScript/data.js"></script>
-    <script src="JavaScript/catalogo.js"></script>
-    <script src="JavaScript/detalleLibro.js"></script>
-    <script src="JavaScript/favoritos.js"></script>
-</body>
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo",window.scrollY>0);
+		})
+        document.getElementById('menu-icon').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    var busqueda = document.querySelector('.busqueda');
+    
+    // Toggle Sidebar
+    sidebar.classList.toggle('open');
+    
+    // Mostrar/ocultar la barra de búsqueda si la sidebar está abierta
+    if (sidebar.classList.contains('open')) {
+        busqueda.classList.add('open'); // Mostrar barra de búsqueda
+    } else {
+        busqueda.classList.remove('open'); // Ocultar barra de búsqueda
+    }
+    
+    // Alternar la clase "abajo" para el header
+    document.querySelector('header').classList.toggle('abajo');
+});
 
+document.addEventListener('click', function(event) {
+    var sidebar = document.getElementById('sidebar');
+    var menuIcon = document.getElementById('menu-icon');
+    var busquedaSidebar = document.querySelector('.busqueda');
+    const logo = document.querySelector('.logo');
+    
+    // Si el clic está fuera del sidebar y del menu-icon, cerrar todo
+    if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+        sidebar.classList.remove('open');
+        busquedaSidebar.classList.remove('open');
+        document.querySelector('header').classList.remove('abajo');
+    }
+
+    // Control de la visibilidad del logo
+    if (sidebar.classList.contains('open')) {
+        logo.style.display = 'none';
+    } else {
+        logo.style.display = 'block';
+    }
+});
+</script>
+    <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo",window.scrollY>0);
+		})
+	</script>
+<script src="JavaScript/logOut.js"></script>
+<script src="JavaScript/data.js"></script>
+<script src="JavaScript/catalogo.js"></script>
+<script src="JavaScript/detalleLibro.js"></script>
+<script src="JavaScript/favoritos.js"></script>
+</body>
 </html>

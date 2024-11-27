@@ -134,6 +134,8 @@ header.abajo ul li a {
     font-size: 14px;
     color: #ccc;
 }
+
+/* Contenedor principal del banner */
 .banner {
     display: flex;
     justify-content: center;
@@ -313,3 +315,116 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 65px;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: rgba(42, 98, 63, 1);
+    transition: left 0.3s ease;
+    z-index: 20;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #392400bb;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: #ffffffbb;
+ 
+   }
+
+
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.menu-icon i {
+    font-size: 30px;
+    color: #fff;
+}
+/* Esto ocultará la barra de búsqueda por defecto */
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 100px;
+    transition: 0.5s ease;
+}
+
+@media (max-width: 770px) {
+    /* Ocultar la barra de búsqueda cuando la sidebar está abierta */
+    .busqueda {
+        display: none; /* Se oculta la búsqueda por defecto */
+    }
+    .busqueda.open {
+        display: flex; /* Se muestra cuando la sidebar está abierta */
+    }
+
+    /* Aseguramos que la barra lateral esté visible */
+    .sidebar {
+        display: block;
+    }
+    
+    /* Mostrar la barra de búsqueda en la parte superior cuando se hace clic */
+    .busqueda input {
+        width: 0px; /* Establecer un ancho de 0 para la animación */
+    }
+
+    .busqueda.open input {
+        width: 250px; /* Expandir la barra cuando se hace clic */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar el icono del menú en pantallas pequeñas */
+    }
+
+    header ul {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+    }
+
+    .sidebar.open {
+        left: 0; /* Muestra la sidebar cuando está abierta */
+    }
+    .banner {
+        
+        height: 130vh;
+       
+    }
+    }
+
+
+.sidebar.open {
+    left: 0;
+}
+header.abajo {
+    background: rgba(42, 98, 63, 1);
+}
+.busqueda.open  {
+    
+   display: flex;
+}
+
+.busqueda.open input {
+
+    width: 250px;
+}
+
