@@ -154,28 +154,109 @@ main h2 {
 
 
 
-.nosotros {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
+/* Estilo general del footer */
+footer {
+    background: #1e1e1e; /* Fondo oscuro elegante */
+    color: #f1f1f1; /* Texto claro */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+.nosotros {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.nosotros h2 {
+    font-size: 24px;
+    color: #ffcc00; /* Título destacado */
+    margin-bottom: 10px;
+}
 
+.nosotros p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto; /* Centrar el texto */
+}
+
+/* Estilo de las secciones */
 .content {
     display: flex;
-    justify-content: space-around;
-    background: rgba(0, 0, 0, 0.5);
-    color: #312002e0;
-    padding: 20px 0;
-    text-align: left;
+    flex-wrap: wrap; /* Permitir que las secciones se ajusten en pantallas pequeñas */
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .content .section {
     flex: 1;
+    min-width: 200px; /* Tamaño mínimo para pantallas pequeñas */
     padding: 10px;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Color del título */
+    border-bottom: 2px solid #ffcc00; /* Línea decorativa */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Texto y enlaces en blanco */
+.content p,
+.content a {
+    font-size: 14px;
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.content a:hover {
+    color: #ffcc00; /* Resaltar enlaces al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* Estilo del pie final */
+#final {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999; /* Texto gris tenue */
+}
+
+#final p {
+    margin: 0;
+}
+
+/* Adaptaciones para dispositivos pequeños */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center; /* Centrar contenido */
+    }
+
+    .content .section {
+        text-align: center; /* Centrar las secciones */
+    }
+
+    .nosotros p {
+        font-size: 14px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+/* Estilo para los enlaces de la sección "Síguenos" */
+.content .section a {
+    font-size: 14px;
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    margin: 5px 0;
+}
+
+/* Efecto hover para los enlaces */
+.content .section a:hover {
+    color: #ffcc00; /* Cambia a dorado cuando se pase el cursor */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
 }
 
 .section h3 {
