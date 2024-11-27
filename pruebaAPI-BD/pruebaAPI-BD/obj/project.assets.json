@@ -3625,19 +3625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
-      "projectName": "pruebaAPI-BD",
-      "projectPath": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
-      "packagesPath": "C:\\Users\\deleo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
       "projectName": "pruebaAPI-BD",
       "projectPath": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
       "packagesPath": "C:\\Users\\jhoma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\obj\\",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jhoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3723,6 +3715,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

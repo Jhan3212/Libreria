@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const categoriaSeleccionada = urlParams.get('categoria');
 
     function mostrarLibros(librosAFiltrar) {
-        catalogoContainer.innerHTML = ''; // Limpiar contenido previo
+        catalogoContainer.innerHTML = '';
 
         if (librosAFiltrar.length === 0) {
             catalogoContainer.innerHTML = '<p>No hay libros en esta categoría.</p>';
@@ -33,6 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
         );
         mostrarLibros(librosFiltrados);
     } else {
-        mostrarLibros(libros); // Mostrar todos los libros si no hay categoría seleccionada
+        mostrarLibros(libros);
     }
 });

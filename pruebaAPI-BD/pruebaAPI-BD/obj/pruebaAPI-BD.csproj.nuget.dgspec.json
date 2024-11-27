@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
-        "projectName": "pruebaAPI-BD",
-        "projectPath": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
-        "packagesPath": "C:\\Users\\deleo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\obj\\",
-=======
     "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\pruebaAPI-BD.csproj",
         "packagesPath": "C:\\Users\\jhoma\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\obj\\",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jhoma\\AppData\\Roaming\\NuGet\\NuGet.Config",

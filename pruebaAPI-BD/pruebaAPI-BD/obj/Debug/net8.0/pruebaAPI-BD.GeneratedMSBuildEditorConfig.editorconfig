@@ -17,19 +17,11 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = pruebaAPI_BD
 build_property.RootNamespace = pruebaAPI_BD
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\deleo\Downloads\pruebaAPI-BD\pruebaAPI-BD\
-=======
 build_property.ProjectDir = C:\Users\jhoma\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD\
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
-build_property.MSBuildProjectDirectory = C:\Users\deleo\Downloads\pruebaAPI-BD\pruebaAPI-BD
-=======
 build_property.MSBuildProjectDirectory = C:\Users\jhoma\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
 build_property._RazorSourceGeneratorDebug = 

@@ -1,56 +1,22 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\pruebaapi-bd\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\pruebaapi-bd\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\pruebaapi-bd\\models\\librorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\models\\librorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\pruebaapi-bd\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bd\\pruebaapi-bd\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-=======
   "WorkspaceRootPath": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\jhoma\\onedrive\\documentos\\github\\libreria\\pruebaapi-bd\\pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\jhoma\\onedrive\\documentos\\github\\libreria\\pruebaapi-bd\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\jhoma\\onedrive\\documentos\\github\\libreria\\pruebaapi-bd\\pruebaapi-bd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\jhoma\\onedrive\\documentos\\github\\libreria\\pruebaapi-bd\\pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\jhoma\\onedrive\\documentos\\github\\libreria\\pruebaapi-bd\\pruebaapi-bd\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,20 +39,7 @@
       "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
       "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -97,50 +50,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Cliente.cs",
-=======
-          "SelectedChildIndex": 6,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Program.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Program.cs",
-              "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Program.cs",
-              "RelativeToolTip": "pruebaAPI-BD\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:07:08.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Cliente.cs",
               "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Cliente.cs",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
               "RelativeToolTip": "pruebaAPI-BD\\Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:48:10.5Z"
-<<<<<<< HEAD
-=======
+              "WhenOpened": "2024-11-27T12:12:36.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Usuarios.cs",
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Usuarios.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Usuarios.cs",
@@ -148,11 +74,11 @@
               "RelativeToolTip": "pruebaAPI-BD\\Models\\Usuarios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:47:31.816Z"
+              "WhenOpened": "2024-11-27T12:12:36.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LibroRequest.cs",
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\LibroRequest.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\LibroRequest.cs",
@@ -160,11 +86,11 @@
               "RelativeToolTip": "pruebaAPI-BD\\Models\\LibroRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:30:12.918Z"
+              "WhenOpened": "2024-11-27T12:12:36.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LibrosController.cs",
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Controllers\\LibrosController.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Controllers\\LibrosController.cs",
@@ -172,34 +98,11 @@
               "RelativeToolTip": "pruebaAPI-BD\\Controllers\\LibrosController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:27:32.464Z"
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
+              "WhenOpened": "2024-11-27T12:12:36.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-<<<<<<< HEAD
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Usuarios.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Usuarios.cs",
-              "RelativeToolTip": "pruebaAPI-BD\\Models\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:47:31.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LibroRequest.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\LibroRequest.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\LibroRequest.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\LibroRequest.cs",
-              "RelativeToolTip": "pruebaAPI-BD\\Models\\LibroRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:30:12.918Z"
-=======
+              "DocumentIndex": 7,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Libro.cs",
@@ -207,135 +110,66 @@
               "RelativeToolTip": "pruebaAPI-BD\\Models\\Libro.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAIwA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:26:49.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Db.cs",
-              "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Datos\\Db.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Datos\\Db.cs",
-              "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Datos\\Db.cs",
-              "RelativeToolTip": "pruebaAPI-BD\\Datos\\Db.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwCAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:24:19.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
-              "RelativeDocumentMoniker": "ProyectoSemestral\\Form1.cs",
-              "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
-              "RelativeToolTip": "ProyectoSemestral\\Form1.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAIA5wEYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:19:42.011Z"
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LibrosController.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Controllers\\LibrosController.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Controllers\\LibrosController.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Controllers\\LibrosController.cs",
-              "RelativeToolTip": "pruebaAPI-BD\\Controllers\\LibrosController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:27:32.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Libro.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Libro.cs",
-              "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Libro.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Models\\Libro.cs",
-              "RelativeToolTip": "pruebaAPI-BD\\Models\\Libro.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwA8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:26:49.317Z"
+              "WhenOpened": "2024-11-27T12:12:36.305Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Db.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Datos\\Db.cs",
+              "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Datos\\Db.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Datos\\Db.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\pruebaAPI-BD\\Datos\\Db.cs",
+              "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\pruebaAPI-BD\\Datos\\Db.cs",
               "RelativeToolTip": "pruebaAPI-BD\\Datos\\Db.cs",
               "ViewState": "AgIAAMAAAAAAAAAAAAAswNQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:24:19.475Z"
+              "WhenOpened": "2024-11-27T12:12:36.309Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoSemestral\\Form1.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
+              "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
               "RelativeToolTip": "ProyectoSemestral\\Form1.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAjwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:19:42.011Z"
+              "WhenOpened": "2024-11-27T12:12:36.312Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form2.cs",
-<<<<<<< HEAD
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs",
-              "RelativeDocumentMoniker": "ProyectoSemestral\\Form2.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs",
-=======
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs",
               "RelativeDocumentMoniker": "ProyectoSemestral\\Form2.cs",
               "ToolTip": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
               "RelativeToolTip": "ProyectoSemestral\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:09:42.446Z"
+              "WhenOpened": "2024-11-27T12:12:36.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form2.cs [Dise\u00F1o]",
-<<<<<<< HEAD
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs",
-              "RelativeDocumentMoniker": "ProyectoSemestral\\Form2.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
-=======
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs",
               "RelativeDocumentMoniker": "ProyectoSemestral\\Form2.cs",
-              "ToolTip": "C:\\Users\\deleo\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\deleo\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:09:38.316Z"
+              "WhenOpened": "2024-11-27T12:12:36.504Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Form1.cs [Dise\u00F1o]",
-<<<<<<< HEAD
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
-              "RelativeDocumentMoniker": "ProyectoSemestral\\Form1.cs",
-              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
-=======
               "DocumentMoniker": "C:\\Users\\jhoma\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoSemestral\\Form1.cs",
-              "ToolTip": "C:\\Users\\deleo\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\deleo\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
->>>>>>> 591174928439570f5b4de10d0a29437c8cedbfa0
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BD\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T08:08:58.013Z"
+              "WhenOpened": "2024-11-27T12:12:36.509Z"
             }
           ]
         }
