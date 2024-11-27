@@ -199,7 +199,6 @@ header li a:hover {
 html,
 body {
     height: 100%;
-    /* Garantiza que el body tenga el 100% de la altura */
     display: flex;
     flex-direction: column;
 }
@@ -263,7 +262,7 @@ main {
 
 .busqueda:hover input {
     width: 250px;
-    /* Expansión más suave al hacer hover */
+    
 }
 
 .busqueda:hover i {
@@ -275,12 +274,10 @@ main {
     ;
 }
 
-/* Footer siempre al fondo */
 
-/* Estilo general del footer */
 footer {
-    background: #1e1e1e; /* Fondo oscuro elegante */
-    color: #f1f1f1; /* Texto claro */
+    background: #1e1e1e; 
+    color: #f1f1f1;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -293,35 +290,35 @@ footer {
 
 .nosotros h2 {
     font-size: 24px;
-    color: #ffcc00; /* Título destacado */
+    color: #ffcc00;
     margin-bottom: 10px;
 }
 
 .nosotros p {
     font-size: 16px;
     max-width: 600px;
-    margin: 0 auto; /* Centrar el texto */
+    margin: 0 auto;
 }
 
 /* Estilo de las secciones */
 .content {
     display: flex;
-    flex-wrap: wrap; /* Permitir que las secciones se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
 .content .section {
     flex: 1;
-    min-width: 200px; /* Tamaño mínimo para pantallas pequeñas */
+    min-width: 200px;
     padding: 10px;
 }
 
 .content h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #ffcc00; /* Color del título */
-    border-bottom: 2px solid #ffcc00; /* Línea decorativa */
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -330,13 +327,13 @@ footer {
 .content p,
 .content a {
     font-size: 14px;
-    color: #fff; /* Texto blanco */
+    color: #fff;
     text-decoration: none;
     margin: 5px 0;
 }
 
 .content a:hover {
-    color: #ffcc00; /* Resaltar enlaces al pasar el cursor */
+    color: #ffcc00;
     text-decoration: underline;
 }
 
@@ -345,18 +342,18 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #999; /* Texto gris tenue */
+    color: #999;
 }
 
 #final p {
     margin: 0;
 }
 
-/* Adaptaciones para dispositivos pequeños */
+
 @media (max-width: 768px) {
     .content {
-        flex-direction: column; /* Cambiar a diseño vertical */
-        align-items: center; /* Centrar contenido */
+        flex-direction: column;
+        align-items: center;
     }
 
     .content .section {
@@ -371,15 +368,15 @@ footer {
 /* Estilo para los enlaces de la sección "Síguenos" */
 .content .section a {
     font-size: 14px;
-    color: #fff; /* Texto blanco */
-    text-decoration: none; /* Eliminar subrayado */
+    color: #fff;
+    text-decoration: none;
     margin: 5px 0;
 }
 
 /* Efecto hover para los enlaces */
 .content .section a:hover {
-    color: #ffcc00; /* Cambia a dorado cuando se pase el cursor */
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 
