@@ -11,6 +11,7 @@
         public decimal precio { get; set; }
 
         public int stock { get; set; }
+
         public int idgenero { get; set;}
 
     }

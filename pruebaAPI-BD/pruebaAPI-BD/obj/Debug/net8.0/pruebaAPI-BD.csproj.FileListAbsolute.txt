@@ -113,3 +113,4 @@ C:\Users\admin\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD\obj
 C:\Users\admin\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD\obj\Debug\net8.0\pruebaAPI-BD.pdb
 C:\Users\admin\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD\obj\Debug\net8.0\pruebaAPI-BD.genruntimeconfig.cache
 C:\Users\admin\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD\obj\Debug\net8.0\ref\pruebaAPI-BD.dll
+C:\Users\admin\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BD\pruebaAPI-BD\bin\Debug\net8.0\Newtonsoft.Json.dll

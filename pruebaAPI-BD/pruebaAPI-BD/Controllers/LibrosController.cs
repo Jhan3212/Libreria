@@ -11,7 +11,7 @@ namespace pruebaAPI_BD.Controllers
 
         //este esta hecho para obtener todos los libros
         [HttpGet]
-        [Route("TotalLibros")]
+        [Route("all")]
         public List<Libro> TotaldeLibros()
         {
             return new Db().ObtenerLibros();
@@ -25,6 +25,26 @@ namespace pruebaAPI_BD.Controllers
             return new Db().DameUnLibro(_idlibro);
         }
 
+        //este esta hecho para realizar una insercion de un libro a la base de datos
+        [HttpPost]
+        [Route("Save")]
+        public object GuardarLibro(LibroRequest libro)
+        {
+            var guardado = new Db().InsertarLibro(libro);
+            if (guardado > 0)
+                return new
+                {
+                    titulo = "Libro guardado con exito",
+                    Mensaje = "nada exploto :)",
+                    Code = 200
+                };
+            return new
+            {
+                titulo = "Error al guardar un libro",
+                Mensaje = "mano que hiciste?",
+                Code = 400
+            };
+        }
 
     }
 }

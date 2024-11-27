@@ -1,6 +1,42 @@
 [
   {
     "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
+    "Method": "TotaldeLibros",
+    "RelativePath": "api/Libros/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Libro, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
+    "Method": "GuardarLibro",
+    "RelativePath": "api/Libros/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "libro",
+        "Type": "pruebaAPI_BD.Models.LibroRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
     "Method": "ObtenerLibrito",
     "RelativePath": "api/Libros/Search/{_idlibro}",
     "HttpMethod": "GET",
@@ -26,24 +62,20 @@
     ]
   },
   {
-    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
-    "Method": "TotaldeLibros",
-    "RelativePath": "api/Libros/TotalLibros",
-    "HttpMethod": "GET",
+    "ContainingType": "UsersController",
+    "Method": "ValidateUser",
+    "RelativePath": "api/Users/validate",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Libro, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "request",
+        "Type": "UsersController\u002BLogueoUsuarioAdmin",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "pruebaAPI_BD.Controllers.WeatherForecastController",

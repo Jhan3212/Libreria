@@ -114,5 +114,31 @@ namespace pruebaAPI_BD.Datos
             return libros;
         }
 
+
+        public int InsertarLibro(LibroRequest libritolindo)
+        {
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "INSERT INTO libro(titulo, autor, precio, idgenero) values (@titulo,@autor,@precio,@idgenero)";
+                cmd.Parameters.Add(new MySqlParameter("@titulo", libritolindo.titulo));
+                cmd.Parameters.Add(new MySqlParameter("@autor", libritolindo.autor));
+                cmd.Parameters.Add(new MySqlParameter("@precio", libritolindo.precio));
+                cmd.Parameters.Add(new MySqlParameter("@idgenero", libritolindo.idgenero));
+
+                cmd.Connection.Open();
+                int insertedId = Convert.ToInt32(cmd.ExecuteNonQuery());
+                if (insertedId > 0)
+                    return insertedId;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally { cmd.Connection.Close(); }
+            return 0;
+        }
     }
 }
