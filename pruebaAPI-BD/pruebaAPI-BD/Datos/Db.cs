@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Security.Cryptography.X509Certificates;
 using MySqlConnector;
 using pruebaAPI_BD.Models;
 
@@ -19,6 +20,7 @@ namespace pruebaAPI_BD.Datos
             cmd.Connection = con;
         }
         
+        //me da todos los libro
         public List<Libro> ObtenerLibros()
         {
             List<Libro> libros = new List<Libro>();
@@ -67,7 +69,7 @@ namespace pruebaAPI_BD.Datos
             return libros;
         }
 
-
+        //busca un libro por id
         public List<Libro> DameUnLibro(string _idlibro)
         {
             List<Libro> libros = new List<Libro>();
@@ -117,6 +119,7 @@ namespace pruebaAPI_BD.Datos
         }
 
 
+        //inserta un libro
         public int InsertarLibro(LibroRequest libritolindo)
         {
             try
@@ -146,6 +149,7 @@ namespace pruebaAPI_BD.Datos
             return 0;
         }
 
+        //obtiene un usuario solicitado
         public List<Usuarios> ObtenerUsuario(string name, string password)
         {
             List<Usuarios> usuarios = new List<Usuarios>();
@@ -187,6 +191,26 @@ namespace pruebaAPI_BD.Datos
 
             return usuarios;
             
+        }
+
+        //busqueda de usuarios (Clientes)
+        public List<Cliente> ObtenerUnCliente(string name, string password)
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = cmd.CommandText = ("SELECT * FROM Cliente WHERE nombre = @name and contra = @password");
+
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                
+            }
+            catch (Exception ex) { throw; }
+            finally { cmd.Connection.Close(); }
+            return clientes;
         }
     }
 }

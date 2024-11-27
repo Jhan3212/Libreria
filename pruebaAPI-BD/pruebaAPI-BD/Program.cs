@@ -8,7 +8,20 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+//var app = builder.Build();
+
+//politica para aceptar cualquier origen CORS
+builder.Services.AddCors(Option =>
+{
+    Option.AddPolicy("HabilitarCORS", builder =>
+    {
+        builder.AllowAnyOrigin()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+      });
+});
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -18,6 +31,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//activar politica
+app.UseCors("HabilitarCORS");
 
 app.UseAuthorization();
 
