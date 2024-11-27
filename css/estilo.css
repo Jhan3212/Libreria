@@ -154,10 +154,10 @@ main h2 {
 
 
 
-/* Estilo general del footer */
+
 footer {
-    background: #1e1e1e; /* Fondo oscuro elegante */
-    color: #f1f1f1; /* Texto claro */
+    background: #1e1e1e;
+    color: #f1f1f1;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -170,93 +170,92 @@ footer {
 
 .nosotros h2 {
     font-size: 24px;
-    color: #ffcc00; /* Título destacado */
+    color: #ffcc00;
     margin-bottom: 10px;
 }
 
 .nosotros p {
     font-size: 16px;
     max-width: 600px;
-    margin: 0 auto; /* Centrar el texto */
+    margin: 0 auto;
 }
 
-/* Estilo de las secciones */
+
 .content {
     display: flex;
-    flex-wrap: wrap; /* Permitir que las secciones se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
 
 .content .section {
     flex: 1;
-    min-width: 200px; /* Tamaño mínimo para pantallas pequeñas */
+    min-width: 200px;
     padding: 10px;
 }
 
 .content h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #ffcc00; /* Color del título */
-    border-bottom: 2px solid #ffcc00; /* Línea decorativa */
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
     display: inline-block;
     padding-bottom: 5px;
 }
 
-/* Texto y enlaces en blanco */
 .content p,
 .content a {
     font-size: 14px;
-    color: #fff; /* Texto blanco */
+    color: #fff;
     text-decoration: none;
     margin: 5px 0;
 }
 
 .content a:hover {
-    color: #ffcc00; /* Resaltar enlaces al pasar el cursor */
+    color: #ffcc00;
     text-decoration: underline;
 }
 
-/* Estilo del pie final */
+
 #final {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #999; /* Texto gris tenue */
+    color: #999;
 }
 
 #final p {
     margin: 0;
 }
 
-/* Adaptaciones para dispositivos pequeños */
+
 @media (max-width: 768px) {
     .content {
-        flex-direction: column; /* Cambiar a diseño vertical */
-        align-items: center; /* Centrar contenido */
+        flex-direction: column;
+        align-items: center;
     }
 
     .content .section {
-        text-align: center; /* Centrar las secciones */
+        text-align: center;
     }
 
     .nosotros p {
-        font-size: 14px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+        font-size: 14px;
     }
 }
 
-/* Estilo para los enlaces de la sección "Síguenos" */
+
 .content .section a {
     font-size: 14px;
-    color: #fff; /* Texto blanco */
-    text-decoration: none; /* Eliminar subrayado */
+    color: #fff;
+    text-decoration: none;
     margin: 5px 0;
 }
 
-/* Efecto hover para los enlaces */
+
 .content .section a:hover {
-    color: #ffcc00; /* Cambia a dorado cuando se pase el cursor */
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #ffcc00;
+    text-decoration: underline;
 }
 
 .section h3 {
@@ -417,7 +416,7 @@ main {
     color: #fff;
 }
 
-/* Esto ocultará la barra de búsqueda por defecto */
+
 .busqueda {
     display: flex;
     align-items: center;
@@ -429,49 +428,48 @@ main {
 
 @media (max-width: 770px) {
 
-    /* Ocultar la barra de búsqueda cuando la sidebar está abierta */
+    
     .busqueda {
         display: none;
-        /* Se oculta la búsqueda por defecto */
+        
     }
 
     .busqueda.open {
         display: flex;
-        /* Se muestra cuando la sidebar está abierta */
+        
     }
 
-    /* Aseguramos que la barra lateral esté visible */
+ 
     .sidebar {
         display: block;
     }
 
-    /* Mostrar la barra de búsqueda en la parte superior cuando se hace clic */
+    
     .busqueda input {
         width: 0px;
-        /* Establecer un ancho de 0 para la animación */
+        
     }
 
     .busqueda.open input {
         width: 250px;
-        /* Expandir la barra cuando se hace clic */
+        
     }
 
     .menu-icon {
         display: block;
-        /* Mostrar el icono del menú en pantallas pequeñas */
+        
     }
 
     header ul {
         display: none;
-        /* Ocultar el menú en pantallas pequeñas */
+        
     }
 
     .sidebar.open {
         left: 0;
-        /* Muestra la sidebar cuando está abierta */
+        
     }
 }
-
 
 .sidebar.open {
     left: 0;

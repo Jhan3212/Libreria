@@ -154,17 +154,17 @@
     var sidebar = document.getElementById('sidebar');
     var busqueda = document.querySelector('.busqueda');
     
-    // Toggle Sidebar
+    
     sidebar.classList.toggle('open');
     
-    // Mostrar/ocultar la barra de búsqueda si la sidebar está abierta
+    
     if (sidebar.classList.contains('open')) {
-        busqueda.classList.add('open'); // Mostrar barra de búsqueda
+        busqueda.classList.add('open');
     } else {
-        busqueda.classList.remove('open'); // Ocultar barra de búsqueda
+        busqueda.classList.remove('open');
     }
     
-    // Alternar la clase "abajo" para el header
+
     document.querySelector('header').classList.toggle('abajo');
 });
 
@@ -174,14 +174,14 @@ document.addEventListener('click', function(event) {
     var busquedaSidebar = document.querySelector('.busqueda');
     const logo = document.querySelector('.logo');
     
-    // Si el clic está fuera del sidebar y del menu-icon, cerrar todo
+    
     if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
         sidebar.classList.remove('open');
         busquedaSidebar.classList.remove('open');
         document.querySelector('header').classList.remove('abajo');
     }
 
-    // Control de la visibilidad del logo
+    
     if (sidebar.classList.contains('open')) {
         logo.style.display = 'none';
     } else {

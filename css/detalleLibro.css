@@ -135,7 +135,7 @@ header.abajo ul li a {
     color: #ccc;
 }
 
-/* Contenedor principal del banner */
+
 .banner {
     display: flex;
     justify-content: center;
@@ -151,11 +151,10 @@ header.abajo ul li a {
 #detalle {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px; /* Máxima anchura para evitar que se estire demasiado en pantallas grandes */
+    max-width: 1200px;
     width: 100%;
 }
 
-/* Contenedor de la portada */
 .portada-container {
     flex: 1;
     padding: 15px;
@@ -173,7 +172,7 @@ header.abajo ul li a {
     box-shadow: 0 4px 8px rgba(201, 201, 201, 0.2);
 }
 
-/* Contenedor de la información del libro */
+
 .informacion {
     flex: 1;
     display: flex;
@@ -360,7 +359,7 @@ main {
     font-size: 30px;
     color: #fff;
 }
-/* Esto ocultará la barra de búsqueda por defecto */
+
 .busqueda {
     display: flex;
     align-items: center;
@@ -371,38 +370,38 @@ main {
 }
 
 @media (max-width: 770px) {
-    /* Ocultar la barra de búsqueda cuando la sidebar está abierta */
+    
     .busqueda {
-        display: none; /* Se oculta la búsqueda por defecto */
+        display: none; 
     }
     .busqueda.open {
-        display: flex; /* Se muestra cuando la sidebar está abierta */
+        display: flex;
     }
 
-    /* Aseguramos que la barra lateral esté visible */
+    
     .sidebar {
         display: block;
     }
     
-    /* Mostrar la barra de búsqueda en la parte superior cuando se hace clic */
+    
     .busqueda input {
-        width: 0px; /* Establecer un ancho de 0 para la animación */
+        width: 0px;
     }
 
     .busqueda.open input {
-        width: 250px; /* Expandir la barra cuando se hace clic */
+        width: 250px;
     }
 
     .menu-icon {
-        display: block; /* Mostrar el icono del menú en pantallas pequeñas */
+        display: block;
     }
 
     header ul {
-        display: none; /* Ocultar el menú en pantallas pequeñas */
+        display: none;
     }
 
     .sidebar.open {
-        left: 0; /* Muestra la sidebar cuando está abierta */
+        left: 0;
     }
     .banner {
         
