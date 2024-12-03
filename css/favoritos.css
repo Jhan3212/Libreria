@@ -82,13 +82,10 @@ header li a:hover {
 }
 
 
-/* Contenedor principal para el contenido */
 main {
     margin-top: 70px;
     flex: 1;
     font-family: Helvetica;
-
-    /* Hace que el main ocupe el espacio disponible */
 }
 
 .busqueda {
@@ -142,7 +139,7 @@ main {
 
 .busqueda:hover input {
     width: 250px;
-    /* Expansión más suave al hacer hover */
+    
 }
 
 .busqueda:hover i {
@@ -154,7 +151,7 @@ main {
     ;
 }
 
-/* Footer siempre al fondo */
+
 
 .nosotros {
     background: rgba(0, 0, 0, 0.5);
@@ -311,46 +308,46 @@ main {
 
 @media (max-width: 770px) {
 
-    /* Ocultar la barra de búsqueda cuando la sidebar está abierta */
+    
     .busqueda {
         display: none;
-        /* Se oculta la búsqueda por defecto */
+        
     }
 
     .busqueda.open {
         display: flex;
-        /* Se muestra cuando la sidebar está abierta */
+        
     }
 
-    /* Aseguramos que la barra lateral esté visible */
+    
     .sidebar {
         display: block;
     }
 
-    /* Mostrar la barra de búsqueda en la parte superior cuando se hace clic */
+    
     .busqueda input {
         width: 0px;
-        /* Establecer un ancho de 0 para la animación */
+        
     }
 
     .busqueda.open input {
         width: 250px;
-        /* Expandir la barra cuando se hace clic */
+        
     }
 
     .menu-icon {
         display: block;
-        /* Mostrar el icono del menú en pantallas pequeñas */
+        
     }
 
     header ul {
         display: none;
-        /* Ocultar el menú en pantallas pequeñas */
+        
     }
 
     .sidebar.open {
         left: 0;
-        /* Muestra la sidebar cuando está abierta */
+        
     }
 }
 
