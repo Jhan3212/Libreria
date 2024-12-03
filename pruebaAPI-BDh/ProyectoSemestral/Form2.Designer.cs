@@ -67,9 +67,9 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(230, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(341, 17);
+            this.label2.Size = new System.Drawing.Size(349, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Explora nuestro catálogo y descubre nuvas historias";
+            this.label2.Text = "Explora nuestro catálogo y descubre nuevas historias";
             // 
             // listBox1
             // 
@@ -224,7 +224,7 @@
             // BtnBack
             // 
             this.BtnBack.Location = new System.Drawing.Point(7, 6);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(55, 30);
             this.BtnBack.TabIndex = 18;

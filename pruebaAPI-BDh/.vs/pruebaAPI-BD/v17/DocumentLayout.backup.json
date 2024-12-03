@@ -1,25 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bdh\\pruebaapi-bdh\\pruebaapi-bd\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\proyectosemestral\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bdh\\pruebaapi-bdh\\pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\proyectosemestral\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bdh\\pruebaapi-bdh\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\deleo\\downloads\\pruebaapi-bdh\\pruebaapi-bdh\\pruebaapi-bd\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\pruebaapi-bd\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD87E15-D5C5-4D87-8EC4-91C9587BE7A0}|ProyectoSemestral\\ProyectoSemestral.csproj|solutionrelative:proyectosemestral\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\datos\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|c:\\users\\admin\\onedrive\\documentos\\github\\libreria\\pruebaapi-bdh\\pruebaapi-bd\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47C73E2F-7209-4BA7-9AF5-AF50E2EEB1C6}|pruebaAPI-BD\\pruebaAPI-BD.csproj|solutionrelative:pruebaapi-bd\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,15 +46,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Libro.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\pruebaAPI-BD\\Models\\Libro.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\pruebaAPI-BD\\Models\\Libro.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Models\\Libro.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\pruebaAPI-BD\\Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\pruebaAPI-BD\\Models\\Libro.cs",
               "RelativeToolTip": "pruebaAPI-BD\\Models\\Libro.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -47,37 +63,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form2.cs",
+              "RelativeDocumentMoniker": "ProyectoSemestral\\Form2.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form2.cs",
+              "RelativeToolTip": "ProyectoSemestral\\Form2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:40:20.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoSemestral\\Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoSemestral\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:01:20.301Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\pruebaAPI-BD\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\pruebaAPI-BD\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\pruebaAPI-BD\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\pruebaAPI-BD\\Controllers\\UsersController.cs",
               "RelativeToolTip": "pruebaAPI-BD\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T07:43:12.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\ProyectoSemestral\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoSemestral\\Form1.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\ProyectoSemestral\\Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form1.cs",
               "RelativeToolTip": "ProyectoSemestral\\Form1.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAApwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T08:19:42.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\ProyectoSemestral\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form2.cs",
               "RelativeDocumentMoniker": "ProyectoSemestral\\Form2.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoSemestral\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T08:09:38.316Z",
@@ -85,16 +126,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Db.cs",
-              "DocumentMoniker": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\pruebaAPI-BD\\Datos\\Db.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\pruebaAPI-BD\\Datos\\Db.cs",
               "RelativeDocumentMoniker": "pruebaAPI-BD\\Datos\\Db.cs",
-              "ToolTip": "C:\\Users\\deleo\\Downloads\\pruebaAPI-BDh\\pruebaAPI-BDh\\pruebaAPI-BD\\Datos\\Db.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\pruebaAPI-BD\\Datos\\Db.cs",
               "RelativeToolTip": "pruebaAPI-BD\\Datos\\Db.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFsAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAqwFsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T09:24:19.475Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form3.cs",
+              "RelativeDocumentMoniker": "ProyectoSemestral\\Form3.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form3.cs",
+              "RelativeToolTip": "ProyectoSemestral\\Form3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:02:31.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form3.cs",
+              "RelativeDocumentMoniker": "ProyectoSemestral\\Form3.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive\\Documentos\\GitHub\\Libreria\\pruebaAPI-BDh\\ProyectoSemestral\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoSemestral\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T13:02:12.379Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
