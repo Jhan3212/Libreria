@@ -21,6 +21,27 @@
   },
   {
     "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
+    "Method": "ComproUnLibro",
+    "RelativePath": "api/Libros/Buy/{_idUser}/{_idLibro}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_idUser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "_idLibro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
     "Method": "deleteLibro",
     "RelativePath": "api/Libros/Delete/{_id}",
     "HttpMethod": "DELETE",
@@ -29,6 +50,22 @@
     "Parameters": [
       {
         "Name": "_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
+    "Method": "VenderUnLibro",
+    "RelativePath": "api/Libros/Sale/{_idLibro}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_idLibro",
         "Type": "System.Int32",
         "IsRequired": true
       }

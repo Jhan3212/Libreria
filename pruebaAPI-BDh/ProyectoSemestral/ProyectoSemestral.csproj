@@ -153,8 +153,11 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Libros.cs" />
     <Compile Include="Models\UserRequest.cs" />
     <Compile Include="Models\Users.cs" />
+    <Compile Include="Services\LibroService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

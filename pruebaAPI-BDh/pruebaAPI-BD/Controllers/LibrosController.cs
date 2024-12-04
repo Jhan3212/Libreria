@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Security.Cryptography;
+using Microsoft.AspNetCore.Mvc;
 using pruebaAPI_BD.Datos;
 using pruebaAPI_BD.Models;
 
@@ -76,6 +77,42 @@ namespace pruebaAPI_BD.Controllers
             return new
             {
                 titulo = "Error todo murio",
+                Mensaje = "mano que hiciste?",
+            };
+        }
+
+        [HttpGet]
+        [Route("Buy/{_idUser}/{_idLibro}")]
+        public object ComproUnLibro(int _idUser, int _idLibro)
+        {
+            var guardado = new Db().compraLibro(_idUser, _idLibro);
+            if (guardado > 0)
+                return new
+                {
+                    titulo = "Compra Realizada ",
+                    Mensaje = "nada exploto :)",
+                };
+            return new
+            {
+                titulo = "Compra Rechazada",
+                Mensaje = "mano que hiciste?",
+            };
+        }
+
+        [HttpGet]
+        [Route("Sale/{_idLibro}")]
+        public object VenderUnLibro(int _idLibro)
+        {
+            var guardado = new Db().venderLibro(_idLibro);
+            if (guardado > 0)
+                return new
+                {
+                    titulo = "Venta Realizada ",
+                    Mensaje = "nada exploto :)",
+                };
+            return new
+            {
+                titulo = "Venta Rechazada",
                 Mensaje = "mano que hiciste?",
             };
         }

@@ -28,7 +28,7 @@ namespace pruebaAPI_BD.Datos
             {
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT * FROM Libro";
+                cmd.CommandText = "SELECT * FROM Libro WHERE idUsuario IS NULL";
 
                 cmd.Connection.Open();
                 ds = new DataSet();
@@ -429,5 +429,52 @@ namespace pruebaAPI_BD.Datos
             return 0;
         }
         
+
+        //compra de libros
+        public  int compraLibro(int idUser, int idLibro )
+        {
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "UPDATE Libro SET idUsuario = " + idUser + " WHERE idLibro = "+ idLibro;
+
+                cmd.Connection.Open();
+                int insertedId = Convert.ToInt32(cmd.ExecuteNonQuery());
+                if (insertedId > 0)
+                    return insertedId;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally { cmd.Connection.Close(); }
+            return 0;
+        }
+
+        //vender libro
+        public int venderLibro(int idLibro)
+        {
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "UPDATE Libro SET idUsuario = null WHERE idLibro = " + idLibro;
+
+                cmd.Connection.Open();
+                int insertedId = Convert.ToInt32(cmd.ExecuteNonQuery());
+                if (insertedId > 0)
+                    return insertedId;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally { cmd.Connection.Close(); }
+            return 0;
+        }
+
     }
 }

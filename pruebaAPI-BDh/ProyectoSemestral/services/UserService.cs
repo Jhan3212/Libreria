@@ -30,6 +30,27 @@ namespace ProyectoSemestral.Services
             }
         }
 
+        public static async Task<List<Cliente>> ObtenerTodosLosClientes(Cliente _cliente)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string url = $"https://localhost:7061/api/Users/Client/{_cliente.nombre}/{_cliente.pass}";
+                HttpResponseMessage respuesta = await client.GetAsync(url);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    var contenido = await respuesta.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<List<Cliente>>(contenido);
+                }
+                else
+                {
+                    throw new Exception($"Error en la solicitud: {respuesta.StatusCode}");
+                }
+            }
+        }
+        
+
+        
 
     }
 }

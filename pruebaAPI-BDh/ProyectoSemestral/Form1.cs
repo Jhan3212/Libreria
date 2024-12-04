@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Net.Http;
 using System.Text;
@@ -87,18 +88,46 @@ namespace ProyectoSemestral
                 Password = contraseña
             };
 
+            var userC = new Cliente()
+            {
+                nombre = usuario,
+                pass = contraseña
+            };
+
             try
             {
                 var respuesta = await UserService.ObtenerTodosLosUsuarios(user);
+                List<Cliente> cliente = await UserService.ObtenerTodosLosClientes(userC);
 
-                if (respuesta != null && respuesta.Count > 0)
+                if (respuesta != null && respuesta.Count > 0 || cliente!= null && cliente.Count > 0)
                 {
                     // Inicio de sesión exitoso
                     MessageBox.Show("Inicio de sesión exitoso.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Form2 form2 = new Form2(usuario);
-                    form2.Show();
-
-                    this.Hide();
+                    
+                    //para admin
+                    if (user.Name == "Eduardo1234" && user.Password == "5555")
+                    {
+                        Form2 form2 = new Form2(usuario);
+                        form2.Show();
+                        this.Hide();
+                    }
+                    //para admin
+                    else if (user.Name == "JuanPerez" && user.Password == "12345")
+                    {
+                        Form2 form2 = new Form2(usuario);
+                        form2.Show();
+                        this.Hide();
+                    }
+                    
+                    //para usuarios
+                    else
+                    {
+                        
+                        Form3 form3 = new Form3(usuario, cliente);
+                        form3.Show();
+                        this.Hide();
+                    }
+                    
                 }
                 else
                 {
