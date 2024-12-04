@@ -114,11 +114,11 @@
             // btnRegistrarUsuario
             // 
             this.btnRegistrarUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistrarUsuario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarUsuario.ForeColor = System.Drawing.Color.Black;
             this.btnRegistrarUsuario.Location = new System.Drawing.Point(279, 371);
             this.btnRegistrarUsuario.Name = "btnRegistrarUsuario";
-            this.btnRegistrarUsuario.Size = new System.Drawing.Size(225, 23);
+            this.btnRegistrarUsuario.Size = new System.Drawing.Size(225, 28);
             this.btnRegistrarUsuario.TabIndex = 7;
             this.btnRegistrarUsuario.Text = "Registrate aquí";
             this.btnRegistrarUsuario.UseVisualStyleBackColor = false;

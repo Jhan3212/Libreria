@@ -135,6 +135,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarLibro.Designer.cs">
+      <DependentUpon>EditarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,10 +169,22 @@
     <Compile Include="Models\Libros.cs" />
     <Compile Include="Models\UserRequest.cs" />
     <Compile Include="Models\Users.cs" />
+    <Compile Include="RegistarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistarUsuario.Designer.cs">
+      <DependentUpon>RegistarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\LibroService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditarLibro.resx">
+      <DependentUpon>EditarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +203,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistarUsuario.resx">
+      <DependentUpon>RegistarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
