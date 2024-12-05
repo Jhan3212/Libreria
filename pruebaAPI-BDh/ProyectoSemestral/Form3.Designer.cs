@@ -41,6 +41,8 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnVenderLibro = new System.Windows.Forms.Button();
+            this.btnEditarUsuario = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbxLibrosDisponibles
@@ -52,6 +54,7 @@
             this.lbxLibrosDisponibles.Name = "lbxLibrosDisponibles";
             this.lbxLibrosDisponibles.Size = new System.Drawing.Size(394, 556);
             this.lbxLibrosDisponibles.TabIndex = 0;
+            this.lbxLibrosDisponibles.SelectedIndexChanged += new System.EventHandler(this.lbxLibrosDisponibles_SelectedIndexChanged);
             // 
             // btnVerInfoLibro
             // 
@@ -178,11 +181,37 @@
             this.btnVenderLibro.UseVisualStyleBackColor = true;
             this.btnVenderLibro.Click += new System.EventHandler(this.btnVenderLibro_Click);
             // 
+            // btnEditarUsuario
+            // 
+            this.btnEditarUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarUsuario.Location = new System.Drawing.Point(123, 548);
+            this.btnEditarUsuario.Margin = new System.Windows.Forms.Padding(6);
+            this.btnEditarUsuario.Name = "btnEditarUsuario";
+            this.btnEditarUsuario.Size = new System.Drawing.Size(352, 66);
+            this.btnEditarUsuario.TabIndex = 28;
+            this.btnEditarUsuario.Text = "Editar usuario";
+            this.btnEditarUsuario.UseVisualStyleBackColor = true;
+            this.btnEditarUsuario.Click += new System.EventHandler(this.btnEditarUsuario_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(38, 498);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(529, 27);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "No te gusta tu usuario?, cambialo si tu deseas\r\n";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1467, 831);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnEditarUsuario);
             this.Controls.Add(this.btnVenderLibro);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblUsuario);
@@ -218,5 +247,7 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnVenderLibro;
+        private System.Windows.Forms.Button btnEditarUsuario;
+        private System.Windows.Forms.Label label4;
     }
 }

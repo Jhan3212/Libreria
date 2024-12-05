@@ -12,7 +12,16 @@ using pruebaAPI_BD.Models;
 [ApiController]
 public class UsersController : ControllerBase
 {
-    
+
+    //Obtiene todos los usuarios
+    [HttpGet]
+    [Route("all")]
+    public List<Cliente> ObtenerTotalUsuarios()
+    {
+        return new Db().ObtenerTotalClientes();
+    }
+
+
     // Valida el usuario administrador
     [HttpGet]
     [Route("Validate/{_nombreUser}/{_ContraUser}")]
@@ -60,28 +69,24 @@ public class UsersController : ControllerBase
     }
 
 
-
-    // Inserta un cliente en la base datos
+    //inserta el cliente
     [HttpPost]
     [Route("InsertClient")]
-    public object InsertarUnCliente(ClienteRequest cliente)
+    public IActionResult InsertarUnCliente(ClienteRequest cliente)
     {
         var guardado = new Db().InsertarCliente(cliente);
+
         if (guardado > 0)
-            return new
-            {
-                mensajito = "Todo bien pa :)"
-            };
-        return new
-        {
-            mensajito = "Todo exploto :V"
-        };
+            return Ok(new { mensajito = "Todo bien pa :)" });
+
+        return BadRequest(new { mensajito = "Todo exploto :V" });
     }
+
 
     //esto edita los atributos de un usuario
     [HttpPut]
     [Route("EditClient/{_id}")]
-    public object EditarCafe(int _id, ClienteRequest _usuario)
+    public object EditarCliente(int _id, ClienteRequest _usuario)
     {
         var editado = new Db().ActualizarCliente(_id, _usuario);
         if (editado > 0)

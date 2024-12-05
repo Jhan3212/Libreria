@@ -36,22 +36,10 @@ namespace ProyectoSemestral
 
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
-            string usuario = txtUsuario.Text.Trim();
-            string contraseña = txtContraseñaUsuario.Text;
-
-            if (string.IsNullOrEmpty(usuario))
-            {
-                MessageBox.Show("El campo de usuario no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (string.IsNullOrEmpty(contraseña))
-            {
-                MessageBox.Show("El campo de contraseña no puede estar vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            MessageBox.Show("Usuario registrado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            RegistarUsuario registarUsuario = new RegistarUsuario();
+            registarUsuario.Show();
+            this.Hide();
+            
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)

@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using pruebaAPI_BD.Datos;
 using pruebaAPI_BD.Models;
 
@@ -18,6 +17,13 @@ namespace pruebaAPI_BD.Controllers
             return new Db().ObtenerLibros();
         }
 
+        [HttpGet]
+        [Route("alls")]
+        public List<Libro> TotalitosLibritos()
+        {
+            return new Db().ObtenerTodosLibros();
+        }
+
         //esto esta hecho para obtener un libro mediante el id
         [HttpGet]
         [Route("Search/{_idlibro}")]
@@ -31,19 +37,16 @@ namespace pruebaAPI_BD.Controllers
         [Route("Save")]
         public object GuardarLibro(LibroRequest libro)
         {
+            if (libro == null)
+            {
+                return new { titulo = "Error", Mensaje = "No se recibió el objeto libro." };
+            }
             var guardado = new Db().InsertarLibro(libro);
             if (guardado > 0)
-                return new
-                {
-                    titulo = "Libro guardado con exito",
-                    Mensaje = "nada exploto :)",
-                };
-            return new
-            {
-                titulo = "Error al guardar un libro",
-                Mensaje = "mano que hiciste?",
-            };
+                return new { titulo = "Libro guardado con exito", Mensaje = "nada exploto :)" };
+            return new { titulo = "Error al guardar un libro", Mensaje = "mano que hiciste?" };
         }
+
 
         [HttpPut]
         [Route("Update/{_id}")]
@@ -71,7 +74,7 @@ namespace pruebaAPI_BD.Controllers
             if (guardado > 0)
                 return new
                 {
-                    titulo = "Eliminar ",
+                    titulo = "Eliminacion exitosa ",
                     Mensaje = "nada exploto :)",
                 };
             return new

@@ -169,6 +169,10 @@ namespace ProyectoSemestral
                 }
 
                 var respuesta = await libroService.VenderLibroAsync(libroseleccionado.idlibro);
+
+                MessageBox.Show("todo salio bien :), libro vendido, vuelve a iniciar sesion para ver los cambios en tu biblioteca");
+                this.CargarListBoxLibros();
+
             }
             catch(Exception ex)
             {
@@ -221,5 +225,23 @@ namespace ProyectoSemestral
             }
         }
 
+        private void lbxLibrosDisponibles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditarUsuario_Click(object sender, EventArgs e)
+        {
+
+            EditarUsuario editar = new EditarUsuario(this.usuario, this.cliente);
+            editar.Show();
+            this.Hide();
+
+        }
     }
 }

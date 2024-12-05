@@ -21,6 +21,26 @@
   },
   {
     "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
+    "Method": "TotalitosLibritos",
+    "RelativePath": "api/Libros/alls",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Libro, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaAPI_BD.Controllers.LibrosController",
     "Method": "ComproUnLibro",
     "RelativePath": "api/Libros/Buy/{_idUser}/{_idLibro}",
     "HttpMethod": "GET",
@@ -137,6 +157,26 @@
   },
   {
     "ContainingType": "UsersController",
+    "Method": "ObtenerTotalUsuarios",
+    "RelativePath": "api/Users/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaAPI_BD.Models.Cliente, pruebaAPI-BD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UsersController",
     "Method": "DameUnCliente",
     "RelativePath": "api/Users/Client/{_nombreUser}/{_contraUser}",
     "HttpMethod": "GET",
@@ -184,7 +224,7 @@
   },
   {
     "ContainingType": "UsersController",
-    "Method": "EditarCafe",
+    "Method": "EditarCliente",
     "RelativePath": "api/Users/EditClient/{_id}",
     "HttpMethod": "PUT",
     "IsController": true,

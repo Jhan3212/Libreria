@@ -220,3 +220,6 @@ C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestr
 C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestral\obj\Debug\Proyecto.07DDDE60.Up2Date
 C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestral\obj\Debug\ProyectoSemestral.exe
 C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestral\obj\Debug\ProyectoSemestral.pdb
+C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestral\obj\Debug\ProyectoSemestral.EditarLibro.resources
+C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestral\obj\Debug\ProyectoSemestral.EditarUsuario.resources
+C:\Users\deleo\OneDrive\Documentos\GitHub\Libreria\pruebaAPI-BDh\ProyectoSemestral\obj\Debug\ProyectoSemestral.RegistarUsuario.resources

@@ -68,6 +68,54 @@ namespace pruebaAPI_BD.Datos
 
             return libros;
         }
+        //obtiene todos los libros no importa el usuaroio
+        public List<Libro> ObtenerTodosLibros()
+        {
+            List<Libro> libros = new List<Libro>();
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM Libro";
+
+                cmd.Connection.Open();
+                ds = new DataSet();
+
+                adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(ds);
+
+                foreach (DataTable table in ds.Tables)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        var libro = new Libro()
+                        {
+                            idlibro = Convert.ToInt32(row["idLibro"].ToString()),
+                            titulo = row["titulo"].ToString(),
+                            autor = row["autor"].ToString(),
+                            precio = Convert.ToDecimal(row["precio"].ToString()),
+                            urlPortada = row["urlPortada"].ToString(),
+                            idgenero = Convert.ToInt32(row["idGenero"].ToString()),
+                            Descripcion = row["Descripcion"].ToString()
+
+                        };
+                        libros.Add(libro);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+
+            return libros;
+        }
 
         // --------------------------------------------------------
 
@@ -180,7 +228,7 @@ namespace pruebaAPI_BD.Datos
             {
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO Libro (titulo, autor, precio, stock,idgenero) values (@titulo,@autor,@precio, @url, @idgenero, @Desc)";
+                cmd.CommandText = "INSERT INTO Libro (titulo, autor, precio, urlPortada, idgenero, Descripcion) values (@titulo,@autor,@precio, @url, @idgenero, @Desc)";
                 cmd.Parameters.Add(new MySqlParameter("@titulo", libritolindo.titulo));
                 cmd.Parameters.Add(new MySqlParameter("@autor", libritolindo.autor));
                 cmd.Parameters.Add(new MySqlParameter("@precio", libritolindo.precio));
@@ -210,7 +258,7 @@ namespace pruebaAPI_BD.Datos
             {
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "UPDATE Libro SET titulo = @titulo, autor = @autor, precio = @precio, urlPortada = @portada, idGenero = @genero,  descripcion = @descripcion WHERE id=" + id;
+                cmd.CommandText = "UPDATE Libro SET titulo = @titulo, autor = @autor, precio = @precio, urlPortada = @portada, idGenero = @genero,  descripcion = @descripcion WHERE idLibro =" + id;
                 cmd.Parameters.Add(new MySqlParameter("@titulo", librito.titulo));
                 cmd.Parameters.Add(new MySqlParameter("@autor", librito.autor));
                 cmd.Parameters.Add(new MySqlParameter("@precio", librito.precio));
@@ -302,6 +350,50 @@ namespace pruebaAPI_BD.Datos
             return usuarios;
             
         }
+        //obtenr todos los clientes
+        public List<Cliente> ObtenerTotalClientes()
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "SELECT * FROM Cliente";
+
+                cmd.Connection.Open();
+
+                ds = new DataSet();
+                adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(ds);
+
+                foreach (DataTable table in ds.Tables)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        var cliente = new Cliente()
+                        {
+                            idCliente = Convert.ToInt32(row["idCliente"]),
+                            nombre = row["nombre"].ToString(),
+                            pass = row["Pass"].ToString(),
+                            direccion = row["direccion"].ToString(),
+                            email = row["email"].ToString()
+                        };
+                        clientes.Add(cliente);
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                // Log o imprimir detalles del error
+                Console.WriteLine($"Error: {ex.Message}");
+                throw;
+            }
+
+            finally { cmd.Connection.Close(); }
+            return clientes;
+        }
 
         //busqueda de usuarios (Clientes)
         public List<Cliente> ObtenerUnCliente(string name, string password)
@@ -379,14 +471,14 @@ namespace pruebaAPI_BD.Datos
             return 0;
         }
 
-        //esto actualiza un usuario cliente
+        //esto actualiza un usuario clientee
         public int ActualizarCliente(int id, ClienteRequest _usuario)
         {
             try
             {
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "UPDATE Cliente SET nombre = @n, direccion = @d, pass = @p, email = @e WHERE id=" + id;
+                cmd.CommandText = "UPDATE Cliente SET nombre = @n, direccion = @d, Pass = @p, email = @e WHERE idCliente = " + id;
                 cmd.Parameters.Add(new MySqlParameter("@n", _usuario.nombre));
                 cmd.Parameters.Add(new MySqlParameter("@d", _usuario.direccion));
                 cmd.Parameters.Add(new MySqlParameter("@p", _usuario.pass));

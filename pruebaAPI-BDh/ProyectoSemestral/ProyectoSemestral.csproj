@@ -165,8 +165,12 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\ApiRespuesta.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\ClienteRequest.cs" />
+    <Compile Include="Models\ClienteResponse.cs" />
     <Compile Include="Models\Libros.cs" />
+    <Compile Include="Models\LibrosRequest.cs" />
     <Compile Include="Models\UserRequest.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="RegistarUsuario.cs">
